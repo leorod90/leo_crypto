@@ -6,7 +6,7 @@ export default function ProfileScreen() {
   return (
     <MainLayoutScreen>
       <View>
-        <Text></Text>
+        <Text>test</Text>
       </View>
     </MainLayoutScreen>
   );
