@@ -1,7 +1,7 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
 import { Feather } from "@expo/vector-icons";
-import { COLORS } from "../../constants/theme";
+import { COLORS, FONTS } from "../../constants/theme";
 
 interface Props {
   focused: boolean;
@@ -18,13 +18,12 @@ export default function TabIcon({
   label,
   isTrade,
 }: Props) {
+  const color = focused ? COLORS.white : COLORS.secondary;
+
   return (
     <View style={[styles.container, { ...iconStyle }]}>
-      <Feather
-        name={icon}
-        size={24}
-        color={focused ? COLORS.white : COLORS.secondary}
-      />
+      <Feather name={icon} size={24} color={color} />
+      <Text style={{ marginTop: 5, color, ...FONTS.body5 }}>{label}</Text>
     </View>
   );
 }
