@@ -6,7 +6,7 @@ import {
 import { RouteProp } from "@react-navigation/native";
 
 import HomeScreen from "../../screens/HomeScreen/HomeScreen";
-import MarketScreen from "../../screens/MarketScreen";
+import MarketScreen from "../../screens/MarketScreen/MarketScreen";
 import PortfolioScreen from "../../screens/PortfolioScreen/PortfolioScreen";
 import ProfileScreen from "../../screens/ProfileScreen";
 import TradeScreen from "../../screens/TradeScreen";
